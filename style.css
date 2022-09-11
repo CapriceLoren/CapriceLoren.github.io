@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+header {
+  margin: 150px 0px 0px 70px;
+  font-family: 'Comfortaa', cursive;
+}
+
+@keyframes name-animation {
+  0% { color: green; }
+  50% { color: black; }
+  100% { color: green; }
+}
+
+.header--text {
+  font-size: 40px;
+  font-weight: bold;
+  animation: name-animation 3s infinite;
+}
+
+footer {
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-image {
+  width: 40px;
+  height: auto;
+  padding: 5px;
+}
+
+.git {
+  width: 50px;
+  height: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .header--text {
+    animation: none;
+  }
+}
