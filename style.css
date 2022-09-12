@@ -27,6 +27,33 @@ footer {
   justify-content: flex-end;
 }
 
+.github-img {
+  transition: 1s ease;
+}
+
+.github-img:hover {
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+.linkedin-img {
+  transition: 1s ease;
+}
+
+.linkedin-img:hover {
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+.recipe-img {
+  transition: 1s ease;
+}
+
+.recipe-img:hover {
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
 .footer-image {
   width: 40px;
   height: auto;
