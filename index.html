@@ -6,38 +6,101 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caprice's Portfolio</title>
+  <script src="https://kit.fontawesome.com/e3e9f2d35b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/785/785202.png">
 </head>
 
 <body>
+
   <header>
-    <p>Hi, my name is</p>
-    <p class="header--text">Caprice Genninger</p>
-    <p>Environmental Biologist turned Software Engineer
-    </p>
+    <a href="#about" class="header-links">About</a>
+    <a href="#project-title" class="header-links">Projects</a>
   </header>
 
-  <main>
+  <section id="home">
+    <p>Hi, my name is</p>
+    <p class="header-text">Caprice Genninger</p>
+    <p>Environmental Biologist turned Software Engineer
+    </p>
+  </section>
 
-  </main>
+  <div id="about">
+    <h1 class="aboutHeader">About Me</h1>
+    <p class="aboutP">A biologist turned software engineer inspired by the intersection of analytical 
+      thought and creativity. A trained researcher and born collaborator, motivated by 
+      functionality and scalability. Growth focused and ready to thrive in a challenging 
+      environment. To excel in science is to be able to problem solve from the smallest 
+      variable to the big picture, and to learn something new daily. 
+      I am excited to translate this mindset into programming.</p>
+  </div>
+
+
+    <div id="project-title">
+      <h1>
+        Projects
+      </h1>
+    </div>
+
+  <div id="projects">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Trivia Game</h2>
+          <p>Created using API, JSON, JavaScript and CSS</p>
+          <a href="https://capriceloren.github.io/trivia-game/" target="_blank">Click to View</a>
+        </div>
+        <div class="flip-card-back card1">
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Game of War</h1>
+          <p>Created using Node.js</p>
+          <p>Fully backend game requiring no user input</p>
+          <a href="https://github.com/CapriceLoren/game-of-war" target="_blank">Click to View</a>
+        </div>
+        <div class="flip-card-back card2">
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Character Sheet</h1>
+          <p>Mobile responsive site created using The One API, JSON, JavaScript, and CSS</p>
+          <a href="https://capriceloren.github.io/API-webpage/" target="_blank">Click to View</a>
+        </div>
+        <div class="flip-card-back card3">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
 
   <footer>
     <div class="github-img">
-      <a href="https://github.com/CapriceLoren">
-        <img class="git" src="./img/git.png" alt="GitHub link"></a>
+      <a href="https://github.com/CapriceLoren" target="_blank">
+        <i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <div class="email">
+      <a href="mailto: capriceloren@gmail.com">
+      <i class="fa-solid fa-envelope-open-text"></i></a>
     </div>
     
     <div class="linkedin-img">
-      <a href="https://www.linkedin.com/in/caprice-g-4b95a81b9/">
-          <img class="footer-image" src="./img/linkedin_circle_logo.png"
-          alt="LinkedIn link"></a>
+      <a href="https://www.linkedin.com/in/caprice-g-4b95a81b9/" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i></a>
     </div>
 
-    <div class="recipe-img">
-      <a href="https://capriceloren.github.io/odin-recipes/">
-        <img class="footer-image" src="./img/folder3.png" alt="Recipe Project"></a>
-    </div>
   </footer>
 
 </body>

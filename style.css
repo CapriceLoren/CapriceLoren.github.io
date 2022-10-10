@@ -1,8 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+}
+
+
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.header-links {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+
+}
+
+section {
   margin: 150px 0px 0px 70px;
   font-family: 'Comfortaa', cursive;
+  height: 100vh;
+  /* width: 100vw; */
 }
 
 @keyframes name-animation {
@@ -13,45 +41,170 @@ header {
   100% {color: yellowgreen;}
 }
 
-.header--text {
+.header-text {
   font-size: 40px;
   font-weight: bold;
   animation: name-animation 2s infinite;
 }
 
-footer {
-  width: 95%;
+#about {
+  height: 100vh;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(139, 186, 136);
+}
+
+.aboutHeader {
+  margin-left: 30px;
+}
+
+.aboutP {
+max-width: 600px;
+margin-left: 150px;
+font-size: 20px;
+}
+
+#project-title {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+h1 {
+  padding-right: 60px;
+}
+
+#projects {
+  margin-left: 150px;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  gap: 50px;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(139, 186, 136);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: black;
+}
+
+.flip-card-back {
+  background: url(./img/war.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.card1 {
+  background: url(./img/trivia.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.card2 {
+  background: url(./img/war.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.card3 {
+  background: url(./img/lotr-site.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
+footer {
+  width: 97%;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: flex-end;
+  filter: brightness(0%);
 }
 
 .github-img {
-  transition: 1s ease;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  font-size: 37px;
 }
 
 .github-img:hover {
-  transform: scale(0.8);
-  transition: 1s ease;
+  top: -10px;
 }
 
 .linkedin-img {
-  transition: 1s ease;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  font-size: 37px;
 }
 
 .linkedin-img:hover {
-  transform: scale(0.8);
-  transition: 1s ease;
+  top: -10px;
 }
 
-.recipe-img {
-  transition: 1s ease;
+.email {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  font-size: 35px;
 }
 
-.recipe-img:hover {
-  transform: scale(0.8);
-  transition: 1s ease;
+.email:hover {
+  top: -10px;
+}
+
+i {
+  width: 40px;
+  height: auto;
+  padding: 10px;
 }
 
 .footer-image {
@@ -60,9 +213,8 @@ footer {
   padding: 5px;
 }
 
-.git {
-  width: 50px;
-  height: auto;
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 576px) {
