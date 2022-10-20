@@ -213,6 +213,24 @@ i {
   padding: 5px;
 }
 
+.scrollArrow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: top ease 0.5s;
+  margin-left: 15px;
+  font-size: 30px;
+  opacity: 0; 
+}
+
+.scrollArrow.active{  
+  opacity: 1; 
+} 
+
+.scrollArrow:hover {
+  top: -10px;
+}
+
 .hidden {
   display: none;
 }
