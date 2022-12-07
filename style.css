@@ -33,15 +33,12 @@ header {
 }
 
 .card-links {
-  padding: 10px;
-	transition: all 0.5s ease-in-out 0s; 
-  border-bottom: 2px solid white;
+  /* padding: 10px; */
 }
 
 .card-links:hover{
-  padding: 10px;
-  background-color: white;
-  color:rgb(139, 186, 136);
+  /* padding: 10px; */
+  color:white;
 }
 
 a {
@@ -103,19 +100,25 @@ h1 {
 
 #projects {
   margin-left: 150px;
-  display: grid;
+  margin-bottom: 150px;
+  /* display: grid;
   grid-template-rows: 200px 200px 200px;
   grid-template-columns: 200px 200px 200px;
-  gap: 50px;
+  gap: 50px; */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
 .flip-card {
   background-color: transparent;
   width: 200px;
   height: 200px;
   /* border: 1px solid #f1f1f1; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; /* 3d effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -180,8 +183,22 @@ h1 {
   background-repeat:no-repeat;
   background-position: center center;
   background-size: contain;
+  background-color: black;
 }
 
+.card4 {
+  background: url(./img/pet-site.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card5 {
+  background: url(./img/smack-site.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
 footer {
   width: 97%;
@@ -259,8 +276,36 @@ i {
   display: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 500px) {
   .header--text {
     animation: none;
   }
+
+  .aboutP {
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  /* .card-links{
+    all: unset;
+  }
+
+  #projects {
+    all: unset;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    all: unset;
+  }
+
+  .flip-card-front {
+    all: unset;
+  }
+
+  .flip-card{
+    display: flex;
+    flex-direction: row;
+  }
+ */
+
 }

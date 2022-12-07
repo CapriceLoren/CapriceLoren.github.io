@@ -7,6 +7,7 @@
 
 const scrollArrow = document.querySelector(".scrollArrow");
 
+
 window.addEventListener("scroll", () => { 
   if (window.pageYOffset > 100) { 
     scrollArrow.classList.add("active"); 
